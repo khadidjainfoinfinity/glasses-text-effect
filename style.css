@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eadfc6;
+    font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
+    font-weight: 500;
+}
+img{
+    max-width: 100%;
+}
+/* navigation */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+nav div{
+    display: flex;
+    align-items: center; 
+}
+nav div img{
+    max-width: 5rem;
+    margin-right: 1rem;
+}
+nav div h3{
+    font-size: 2rem;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+.shop{
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+/* main */
+main{
+    position: relative;
+    min-height: calc(100vh - 12rem);
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+}
+.slogan{
+    white-space: nowrap;
+    animation: animateText 25s linear infinite;
+}
+@keyframes animateText{
+    100%{
+        translate: -50% 0;
+    }
+}
+.glasses-container{
+    max-width: 960px;
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+}
+.glasses-container img{
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+}
+.glasses-container div{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 9rem;
+    width: 80%;
+    margin-inline: auto;
+}
+.glasses-container div div{
+    width: 50%;
+    overflow: hidden;
+}
+.glasses-container div div p{
+  font-size: 4rem;
+  white-space: nowrap;  
+  animation: animateText 20s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CTA section */
+.cta{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 0 2rem;
+}
+.cta button, .shop-now{
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 1.15rem;
+    min-width: 12.5rem;
+    padding: 0.75rem 2rem;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.cta .shop-now{
+    background-color: #000;
+    color: #fff;
+}
